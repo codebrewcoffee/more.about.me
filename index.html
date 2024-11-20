@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple page to display a video." />
+    <title>Video Showcase</title>
+    <style>
+      /* General Reset */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      /* Header Styling */
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif;
+        padding: 20px;
+        background: linear-gradient(135deg, #007bff, #96e6a1);
+        color: #333;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        color: #2c3e50;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        color: #34495e;
+        font-style: italic;
+      }
+
+      /* Main Content */
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      video {
+        max-width: 80%;
+        height: auto;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Footer Styling */
+      footer {
+        margin-top: 20px;
+        font-size: 0.875rem;
+        text-align: center;
+      }
+
+      footer a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>More About Me</h1>
+      <p>Please Press Play</p>
+    </header>
+    <main>
+      <video controls>
+        <source src="video/movie.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </main>
+    <footer>
+      <p>Created by Jordan Ballard</p>
+    </footer>
+  </body>
+</html>
